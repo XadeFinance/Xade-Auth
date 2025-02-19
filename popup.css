@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Benzin";
+  src: url("Benzin-Medium.otf") format("opentype");
+}
+
+:root {
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(0, 0, 0);
+  --accent-color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Benzin", sans-serif;
+  width: 300px;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+* {
+  font-family: "Benzin", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--primary-color);
+  margin: 0;
+  opacity: 0.3;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.disclaimer {
+  color: var(--accent-color);
+  font-size: 12px;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+#github {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  fill: var(--primary-color);
+}
